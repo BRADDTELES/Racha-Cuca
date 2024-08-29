@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Nunito', sans-serif;
+}
+
+@media(max-width: 500px){
+    html{
+        font-size: 13px;
+    }
+}
+
+@media(max-width: 400px){
+    html{
+        font-size: 10px;
+    }
+}
+
+main{
+    margin-top: 2rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.board{
+    margin: 2rem;
+    background-color: rgb(186, 0, 0);
+    width: 30rem;
+    height: 30rem;
+    border: 10px rgb(156, 0, 0);
+    border-style: ridge;
+    display: grid;
+    grid-template: repeat(4, 1fr) / repeat(4, 1fr);
+}
+
+span{
+    background-color: rgb(170, 169, 169);
+    width: 100%;
+    height: 100%;
+    border: 1px solid black;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+#empty{
+    background-color: rgb(186, 0, 0);
+}
+
+
+.modal-winner{
+    position: fixed;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    background-color: rgba(0, 0, 0, 0.9);
+    width: 100vw;
+    height: 100vh;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    font-size: 3rem;
+    color: whitesmoke;
+    display: none;
+}
+
+.modal-winner .options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 2rem;
+}
+
+.modal-winner .options button{
+    margin: 0 1rem;
+    width: 10rem;
+    height: 3rem;
+    font-size: 1rem;
+    cursor: pointer;
+    opacity: .8;
+    transition: opacity 300ms;
+}
+
+.modal-winner .options button:first-of-type{
+    background-color: rgb(4, 179, 4);
+    border: 3px outset rgb(0, 122, 0);
+}
+
+.modal-winner .options button:last-of-type{
+    background-color: rgb(233, 12, 12);
+    border: 3px outset rgb(160, 0, 0)
+}
+
+.modal-winner .options button:hover{
+    opacity: 1;
+}
+
+.win{
+    display: flex;
+}

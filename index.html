@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Jogo do 15</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Nunito&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <main>
+        <h1>Jogo do 15</h1>
+        
+        <div class="board">
+            <div id="1">
+                <span></span>
+            </div>
+            <div id="2">
+                <span></span>
+            </div>
+            <div id="3">
+                <span></span>
+            </div>
+            <div id="4">
+                <span></span>
+            </div>
+            <div id="5">
+                <span></span>
+            </div>
+            <div id="6">
+                <span></span>
+            </div>
+            <div id="7">
+                <span></span>
+            </div>
+            <div id="8">
+                <span></span>
+            </div>
+            <div id="9">
+                <span></span>
+            </div>
+            <div id="10">
+                <span></span>
+            </div>
+            <div id="11">
+                <span></span>
+            </div>
+            <div id="12">
+                <span></span>
+            </div>
+            <div id="13">
+                <span></span>
+            </div>
+            <div id="14">
+                <span></span>
+            </div>
+            <div id="15">
+                <span></span>
+            </div>
+            <div id="16">
+                <span id="empty"></span>
+            </div>
+        </div>
+    </main>
+
+
+    <div class="modal-winner">
+        <strong>Parabéns, você ganhou!</strong>
+        <div class="options">
+            <button onclick="Modal.newGame()">Jogar de novo</button>
+            <button onclick="Modal.back()">Voltar</button>
+        </div>
+    </div>
+
+    <script src="scripts.js"></script>
+</body>
+</html>
